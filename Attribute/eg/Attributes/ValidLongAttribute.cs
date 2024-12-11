@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AttributeDay1.eg.Attributes
 {
+    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
     public class ValidLongAttribute : AbstractValidAttribute
     {
         private int min = 0;
